@@ -1,0 +1,22 @@
+{
+  "name": "gswcm.doc",
+  "version": "1.0.0",
+  "description": "Online documentation for GSWCM portal",
+  "main": "index.js",
+  "author": "Simon Baev",
+  "license": "MIT",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "eslint": {
+    "packageManager": "yarn",
+    "autoFixOnSave": true
+  },
+  "devDependencies": {
+    "vuepress": "^1.0.0-alpha.24"
+  },
+  "dependencies": {
+    "eslint": "^5.9.0"
+  }
+}
