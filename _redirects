@@ -1,0 +1,2 @@
+# Redirect default Netlify subdomain to primary domain
+http://goofy-hawking-2f1374.netlify.com/* http://docs.gswcm.net/:splat 301!
