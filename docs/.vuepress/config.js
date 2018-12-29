@@ -4,11 +4,13 @@ module.exports = {
 	themeConfig: {
 		nav: [
 			{ text: "Home", link: "/" },
-			{ text: "Network", link: "/network/" }
+			{ text: "Network", link: "/network/" },
+			{ text: "Servers", link: "/servers/" },
 		],
 		sidebar: [
 			'/',
-			'/network/'
+			'/network/',
+			'/servers/'
 		]
 	}
 }
