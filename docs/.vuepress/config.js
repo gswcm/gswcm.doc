@@ -1,6 +1,11 @@
 module.exports = {
 	title: "GSWCM",
 	description: "Documentation for GSWCM Computing Infrastructure",
+	markdown: {
+		extendMarkdown: md => {
+      md.use(require('markdown-it-include'))
+    }
+	},
 	themeConfig: {
 		nav: [
 			{ text: "Home", link: "/" },
