@@ -1,34 +1,11 @@
----
-sidebarDepth: 3
----
-
-# Network
-
-## General info
-
-The network connectivity of the infrastructure is provided by means of direct connection to the PeachNET (network resource of the USG). Any experiments within network perimeter of the School's network appear to be isolated from the rest of the Campus network.
+# Network segments (VLANs) for LAN
+The LAN scope is divided into a number of segments to support traffic isolation.
 
 ![Network diagram](./IMGs/NetworkDiagram.png)
 
-## IP addresses and routing
-The PeachNET provides 2 IP address ranges: one for *direct* WAN access and one for *routed* LAN access.
+The above diagram illustrates allocation of VLANs and their bindings to other entities of the infrastructure. 
 
-### CIDR ranges
-The following CIDR ranges are defined on the PeachNET for our infrastructure
--	WAN: `168.18.64.166/29`
--	LAN: `168.18.104.0/24`
-
-### Incoming traffic
--	The incoming traffic to **WAN** is routed directly.
--	The incoming traffic to **LAN** is routed via `168.18.64.166`
-
-### Outgoing traffic
-All outgoing traffic goes through the default gateway `168.18.64.161`
-
-## Network segments (VLANs) for LAN
-The LAN scope is divided into a number of segments to support traffic isolation.
-
-### VLAN 100. The Core
+## VLAN 100. The Core
 
 The CIDR range is currently defined as `168.18.104.0/27`
 
@@ -38,7 +15,7 @@ The **Core** VLAN is intended to host internal infrastructure traffic. It connec
 Move this VLAN into a dedicated *non-routable* NAT sub-network instead of hosting it on a routable IP range
 :::
 
-### VLAN 300. Wireless management
+## VLAN 300. Wireless management
 
 The CIDR range is currently defined as `168.18.104.80/28`
 
@@ -48,13 +25,13 @@ This VLAN is intended to interconnect **wireless access points** (AP) and **wire
 Move this VLAN into a dedicated *non-routable* NAT sub-network instead of hosting it on a routable IP range
 :::
 
-### VLAN 400. Terminals
+## VLAN 400. Terminals
 
 The CIDR range is currently defined as `10.0.16.1/24` (NAT)
 
 This VLAN allows for connectivity of thin/fat terminals in rooms 214 and 202. Those terminals have no permanent storage so they **network boot** at start time. This network also hosts a dedicated address allocated to one of the NICs of [LTSP server](/servers/#ltsp)
 
-### VLAN 600. Playground
+## VLAN 600. Playground
 
 The CIDR range is currently defined as `168.18.104.32/27`
 

@@ -1,9 +1,12 @@
-# Servers
+# General info
 
-## LTSP
+Server infrastructure is built on a number of **physical servers** which support its major operations and a number of **virtual servers** which extend such support and provide services for end users. 
 
-The LTSP (Linux Terminal Server Project) appears to be an Open Source alternative to a more common Remote Desktop solution from Microsoft. It allows for multiple thin/fat clients to be network-booted from a single (or a cluster of multiple) LTSP server(s) hosted on the same LAN. 
+## Purpose
 
-### Resources
-- [Official WiKi](http://wiki.ltsp.org/wiki/LTSPedia)
-- [Mailing list](https://sourceforge.net/projects/ltsp/lists/ltsp-discuss)
+## Operations
+
+## Availability
+
+## Backups
+

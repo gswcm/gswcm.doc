@@ -4,13 +4,29 @@ module.exports = {
 	themeConfig: {
 		nav: [
 			{ text: "Home", link: "/" },
-			{ text: "Network", link: "/network/" },
+			{ text: "Networks", link: "/networks/" },
 			{ text: "Servers", link: "/servers/" },
 		],
-		sidebar: [
-			'/',
-			'/network/',
-			'/servers/'
-		]
+		sidebar: {
+			'/networks/': [{
+				title: 'Networks',
+				collapsable: false,
+				children: [
+					'',
+					'IP',
+					'VLAN'
+				]
+			}],
+			'/servers/': [{
+				title: 'Servers',
+				collapsable: true,
+				children: [
+					'',
+					'physical',
+					'virtual'
+				]
+			}]
+		}
 	}
 }
+  
