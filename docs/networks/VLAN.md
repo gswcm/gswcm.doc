@@ -45,3 +45,12 @@ A number of VMs occupy this VLAN to provide resources for class projects. Exampl
 ::: tip Recommendation
 Having capacity of up to 30 routable IP address it is is recommended to **enforce a policy** of *DHCP* based IP address assignment (in favor of *static* allocation schema)
 :::
+
+## VLAN 800. Faculty
+
+The CIDR range is currently defined as `168.18.104.96/27`
+
+
+## VLAN 900. Students
+
+The CIDR range is currently defined as `168.18.104.128/25`

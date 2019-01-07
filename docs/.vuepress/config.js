@@ -19,7 +19,8 @@ module.exports = {
 				children: [
 					'',
 					'IP',
-					'VLAN'
+					'VLAN',
+					'VPN'
 				]
 			}],
 			'/servers/': [{
